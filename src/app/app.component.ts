@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DocumentDTO } from './models/library-document.model';
+import { LibraryDocumentService } from './services/library-document.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Inoversity.Library.ClientApp';
+  documents: DocumentDTO[] = [];
+
+  constructor(private documentService: LibraryDocumentService){
+
+  }
+
+  ngOnInit(): void {
+    this.documents = this.documentService.getDocuments();
+    console.log(this.documentService)
+  }
 }
