@@ -16,7 +16,6 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.documents = this.documentService.getDocuments();
-    console.log(this.documentService)
+    this.documentService.getDocuments().subscribe((result: DocumentDTO[]) => (this.documents = result));
   }
 }
