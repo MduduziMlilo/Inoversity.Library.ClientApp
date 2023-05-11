@@ -1,18 +1,34 @@
-<table class="styled-table">
-  <thead>
-    <th>Id</th>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Publisher</th>
-    <th>Published Date</th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let document of documents">
-      <td>{{ document.id }}</td>
-      <td>{{ document.title }}</td>
-      <td>{{ document.author }}</td>
-      <td>{{ document.publisher }}</td>
-      <td>{{ document.publishedDate }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <div class="table-container">
+  <button type="button" class="btn btn-primary btn-sm top-left" (click)="initNewDocument()"> Create New Document</button>
+  
+  <table class="center">
+    <table class="styled-table">
+      <thead>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Publisher</th>
+        <th>Published Date</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let document of documents">
+          <td>
+            <div class="row-wrapper">
+            {{ document.id }}
+            </div>
+          </td>
+          
+          <td><div class="row-wrapper">{{ document.title }}</div></td>
+          <td><div class="row-wrapper">{{ document.author }}</div></td>
+          <td><div class="row-wrapper">{{ document.publisher }}</div></td>
+          <td><div class="row-wrapper">{{ document.publishedDate }}</div></td>
+          <td><button type="button" class="btn btn-primary btn-sm" (click)="editDocument(document)"> Edit </button></td>
+        </tr>
+      </tbody>
+    </table>
+  </table>
+</div>
+<app-edit-document [document]="documentToEdit"></app-edit-document>
+</div>
+

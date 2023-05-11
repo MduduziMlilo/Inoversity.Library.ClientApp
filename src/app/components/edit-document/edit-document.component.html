@@ -1,0 +1,28 @@
+<div>
+<div class="form-group" *ngIf="document">
+    
+    <h2>
+        {{document.title |  titlecase}}
+    </h2>
+    <div>
+        Title:
+        <input [(ngModel)]="document.title" placeholder="Title" class="form-control">
+    </div>
+    <div>
+        Publisher:
+        <input [(ngModel)]="document.publisher" placeholder="Publisher" class="form-control">
+    </div>
+    <div class="datepicker-container">
+        Published Date:
+        <div class="form-group">
+          <input class="form-control datetimepicker" placeholder="dd-mm-yyyy"
+               name="dp" [(ngModel)]="document.publishedDate">
+        </div>
+    </div>
+    
+    <button type="button" class="btn btn-primary btn-round" (click)="updateDocument(document)" *ngIf="document.id">Save</button>
+    <button type="button" class="btn btn-primary btn-round" (click)="createDocument(document)" *ngIf="!document.id">Create</button>
+    <button type="button" class="btn btn-primary btn-round" (click)="deleteDocument(document)" *ngIf="document.id">Delete</button>
+
+</div>
+</div>
