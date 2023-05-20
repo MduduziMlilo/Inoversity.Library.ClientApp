@@ -19,11 +19,18 @@ export class AppComponent {
     this.documentService.getDocuments().subscribe((result: DocumentDTO[]) => (this.documents = result));
   }
 
+  createDocumentList(documents: DocumentDTO[]){
+    this.documents = documents;
+  }
   initNewDocument() {
     this.documentToEdit = new DocumentDTO(null);
   }
 
   editDocument(document: DocumentDTO) {
-    this.documentToEdit = document
+    this.documentToEdit = document;
+  }
+
+  updateDocumentList(documents: DocumentDTO[]) {
+    this.documents = documents;
   }
 }

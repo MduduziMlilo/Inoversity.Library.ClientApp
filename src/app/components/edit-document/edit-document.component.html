@@ -9,6 +9,10 @@
         <input [(ngModel)]="document.title" placeholder="Title" class="form-control">
     </div>
     <div>
+        Author:
+        <input [(ngModel)]="document.author" placeholder="Author" class="form-control">
+    </div>
+    <div>
         Publisher:
         <input [(ngModel)]="document.publisher" placeholder="Publisher" class="form-control">
     </div>
@@ -21,8 +25,8 @@
     </div>
     
     <button type="button" class="btn btn-primary btn-round" (click)="updateDocument(document)" *ngIf="document.id">Save</button>
-    <button type="button" class="btn btn-primary btn-round" (click)="createDocument(document)" *ngIf="!document.id">Create</button>
     <button type="button" class="btn btn-primary btn-round" (click)="deleteDocument(document)" *ngIf="document.id">Delete</button>
+    <button type="button" class="btn btn-primary btn-round" (click)="createDocument(document)" *ngIf="!document.id">Create</button>
 
 </div>
 </div>

@@ -1,6 +1,7 @@
 <div class="container">
-  <div class="table-container">
-  <button type="button" class="btn btn-primary btn-sm top-left" (click)="initNewDocument()"> Create New Document</button>
+  <div class="table-container top-div">
+  
+  <button type="button" class="btn btn-primary btn-sm top-div" (click)="initNewDocument()"> Create New Document</button>
   
   <table class="center">
     <table class="styled-table">
@@ -10,6 +11,7 @@
         <th>Author</th>
         <th>Publisher</th>
         <th>Published Date</th>
+        <th></th>
       </thead>
       <tbody>
         <tr *ngFor="let document of documents">
@@ -28,7 +30,8 @@
       </tbody>
     </table>
   </table>
+  <app-edit-document class="bottom-div" [document]="documentToEdit" (documentUpdated)="updateDocumentList($event)"></app-edit-document>
 </div>
-<app-edit-document [document]="documentToEdit"></app-edit-document>
 </div>
+
 

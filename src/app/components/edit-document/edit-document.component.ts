@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { DocumentDTO } from 'src/app/models/library-document.model';
 import { LibraryDocumentService } from 'src/app/services/library-document.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-edit-document',
@@ -9,11 +10,12 @@ import { LibraryDocumentService } from 'src/app/services/library-document.servic
 })
 export class EditDocumentComponent implements OnInit{
   @Input() document?: DocumentDTO
+  @Output() documentUpdated = new EventEmitter<DocumentDTO[]>();
 
   /**
    *
    */
-  constructor() {
+  constructor(private documentService: LibraryDocumentService, private location: Location) {
     
   }
 
@@ -21,9 +23,22 @@ export class EditDocumentComponent implements OnInit{
     
   }
 
-  updateDocument(document: DocumentDTO){}
+  updateDocument(document: DocumentDTO){
+    this.documentService
+    .updateDocument(document)
+    .subscribe((documents: DocumentDTO[]) => this.documentUpdated.emit(documents));
+    this.location;
+  }
 
-  createDocument(document: DocumentDTO){}
+  createDocument(document: DocumentDTO){
+    this.documentService
+    .createDocument(document)
+    .subscribe((documents: DocumentDTO[]) => this.documentUpdated.emit(documents));
+  }
 
-  deleteDocument(document: DocumentDTO){}
+  deleteDocument(document: DocumentDTO){
+    this.documentService
+    .deleteDocument(document)
+    .subscribe((documents: DocumentDTO[]) => this.documentUpdated.emit(documents));
+  }
 }

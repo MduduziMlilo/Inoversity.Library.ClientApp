@@ -45,7 +45,6 @@
   
   .table-container {
     position: relative;
-    width: 80%; /* adjust the width as needed */
   }
   
   .center {
@@ -61,4 +60,9 @@
     top: 0;
     left: 0;
     transform: translate(30%, 50%);
+  }
+
+  .top-div, .bottom-div {
+    display: inline-block;
+    vertical-align: top;
   }

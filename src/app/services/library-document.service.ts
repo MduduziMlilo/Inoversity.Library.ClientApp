@@ -15,6 +15,18 @@ export class LibraryDocumentService {
   constructor(private httpClient: HttpClient) { }
 
   public getDocuments():  Observable<any> {
-    return this.httpClient.get<any>(`${this.baseUrl}/api/${this.url}`).pipe(map(response => response.data));
+    return this.httpClient.get<any>(`${this.baseUrl}/api/${this.url}/all`).pipe(map(response => response.data));
+  }
+
+  public createDocument(document: DocumentDTO):  Observable<any> {
+    return this.httpClient.post<DocumentDTO[]>(`${this.baseUrl}/api/${this.url}/add`, document);
+  }
+
+  public deleteDocument(document: DocumentDTO):  Observable<any> {
+    return this.httpClient.delete<DocumentDTO[]>(`${this.baseUrl}/api/${this.url}/${document.id}`);
+  }
+
+  public updateDocument(document: DocumentDTO):  Observable<any> {
+    return this.httpClient.put<DocumentDTO[]>(`${this.baseUrl}/api/${this.url}/${document.id}`, document);
   }
 }
