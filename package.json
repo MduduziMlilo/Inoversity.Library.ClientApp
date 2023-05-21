@@ -3,10 +3,23 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "npm run write:env -s && ng build",
+    "start": "npm run write:env -s && ng serve",
+    "deploy": "npm run write:env -s && ng deploy",
+    "serve:sw": "npm run build -s && npx http-server ./dist -p 4200",
+    "lint": "ng lint && stylelint \"src/**/*.scss\"",
+    "test": "npm run write:env -s && ng test",
+    "test:ci": "npm run write:env -s && npm run lint -s && ng run inoversity.library.client-app:test:ci",
+    "e2e": "npm run write:env -s && ng e2e",
+    "cypress:open": "npm run write:env -s && ng run inoversity.library.client-app:cypress-open",
+    "cypress:run": "npm run write:env -s && ng run inoversity.library.client-app:cypress-run",
+    "translations:extract": "ngx-translate-extract --input ./src --output ./src/translations/template.json --format=json --clean --sort",
+    "docs": "hads ./docs -o",
+    "write:env": "ngx-scripts env npm_package_version",
+    "prettier": "prettier --write \"./src/**/*.{ts,js,html,scss}\"",
+    "prettier:check": "prettier --list-different \"./src/**/*.{ts,js,html,scss}\"",
+    "postinstall": "npm run prettier -s && husky install",
+    "generate": "ng generate"
   },
   "private": true,
   "dependencies": {
