@@ -3,7 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 
 import { Logger } from '@shared';
-import { enUS } from '../../translations/enUS.json';
+import enUS from '../../translations/en-US.json';
 
 const log = new Logger('I18nService');
 const languageKey = 'language';
