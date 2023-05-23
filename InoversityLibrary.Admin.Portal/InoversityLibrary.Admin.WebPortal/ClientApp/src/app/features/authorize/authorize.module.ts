@@ -6,5 +6,8 @@ import { AuthorizeRoutingModule } from './authorize-routing.module';
 @NgModule({
   imports: [CommonModule, AuthorizeRoutingModule],
   declarations: [AuthorizeComponent],
+  exports: [
+    AuthorizeComponent
+  ]
 })
 export class AuthorizeModule {}

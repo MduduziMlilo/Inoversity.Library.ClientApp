@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
 import { EditDocumentComponent } from './components/edit-document/edit-document.component';
 import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
-
+import { AuthorizeModule} from "@app/features/authorize/authorize.module";
 
 
 @NgModule({
@@ -36,6 +36,7 @@ import { ShellModule } from './shell/shell.module';
     SharedModule,
     ShellModule,
     HomeModule,
+    AuthorizeModule,
     ToastsContainer,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
