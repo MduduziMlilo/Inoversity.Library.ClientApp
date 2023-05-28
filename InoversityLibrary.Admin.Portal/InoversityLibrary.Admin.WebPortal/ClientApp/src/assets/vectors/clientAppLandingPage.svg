@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
+   sodipodi:docname="clientAppLandingPage.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72426347"
+     inkscape:cx="594.39695"
+     inkscape:cy="358.29503"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath562">
+      <circle
+         style="fill:#ff2a2a;fill-opacity:0.263119;stroke-width:0.0427887"
+         id="circle564"
+         cx="194.63185"
+         cy="63.457344"
+         r="3.1528301" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#d34bb1;fill-opacity:0.26311904;stroke-width:0.31563"
+       id="rect234"
+       width="186.60107"
+       height="136.673"
+       x="17.981712"
+       y="52.817791"
+       ry="0" />
+    <rect
+       style="fill:#008080;fill-opacity:0.263119;stroke-width:0.795689"
+       id="rect236"
+       width="186.60107"
+       height="49.724285"
+       x="17.981712"
+       y="61.04591"
+       ry="0" />
+    <circle
+       style="fill:#e2f9f9;fill-opacity:1;stroke-width:0.0360914"
+       id="circle566"
+       cx="199.38153"
+       cy="56.855122"
+       r="2.659339" />
+    <circle
+       style="fill:#615fb9;fill-opacity:1;stroke-width:0.0110735"
+       id="circle558"
+       cx="199.38153"
+       cy="55.667736"
+       r="0.81593114" />
+    <circle
+       style="fill:#302ea4;fill-opacity:0.75463;stroke-width:0.0521189"
+       id="circle556"
+       cx="194.63185"
+       cy="59.588928"
+       r="3.8403032"
+       clip-path="url(#clipPath562)"
+       transform="matrix(0.69248151,0,0,0.69248151,64.602575,15.590893)" />
+    <path
+       id="circle568"
+       style="fill:#615fb9;fill-opacity:1;stroke-width:0.0438223"
+       d="m 199.38166,53.626024 a 3.2289786,3.2289786 0 0 0 -3.22924,3.229238 3.2289786,3.2289786 0 0 0 3.22924,3.228878 3.2289786,3.2289786 0 0 0 3.22888,-3.228878 3.2289786,3.2289786 0 0 0 -3.22888,-3.229238 z m 0,0.223299 a 3.0057344,3.0057344 0 0 1 3.00557,3.005939 3.0057344,3.0057344 0 0 1 -3.00557,3.005579 3.0057344,3.0057344 0 0 1 -3.00593,-3.005579 3.0057344,3.0057344 0 0 1 3.00593,-3.005939 z" />
+    <rect
+       style="fill:#e2f9f9;fill-opacity:1;stroke-width:0.4"
+       id="rect3538"
+       width="111.3018"
+       height="9.2751503"
+       x="55.631344"
+       y="148.5"
+       ry="4.6375751" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;font-family:aakar;-inkscape-font-specification:aakar;letter-spacing:0px;fill:#e2f9f9;fill-opacity:1;stroke-width:0.4"
+       x="18.260208"
+       y="58.005005"
+       id="text3594"><tspan
+         sodipodi:role="line"
+         id="tspan3592"
+         style="font-size:3.88056px;fill:#000000;fill-opacity:1;stroke-width:0.4"
+         x="18.260208"
+         y="58.005005"
+         dx="0 0 0 0 0 0 0 0 0 0">Inoversity Library</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;font-family:aakar;-inkscape-font-specification:aakar;fill:#000026;fill-opacity:1;stroke-width:0.4"
+       x="60.247398"
+       y="154.15471"
+       id="text3648"><tspan
+         sodipodi:role="line"
+         id="tspan3646"
+         style="fill:#000026;fill-opacity:1;stroke-width:0.4"
+         x="60.247398"
+         y="154.15471">Search Library</tspan></text>
+  </g>
+</svg>

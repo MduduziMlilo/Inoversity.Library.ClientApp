@@ -1,7 +1,7 @@
 import { AuthConfig } from 'angular-oauth2-oidc';
 
 export const authConfig: AuthConfig = {
-  issuer: 'https://demo.duendesoftware.com',
+  issuer: 'https://localhost:5443',
   clientId: 'interactive.public', // The "Auth Code + PKCE" client
   responseType: 'code',
   redirectUri: window.location.origin + '/',
