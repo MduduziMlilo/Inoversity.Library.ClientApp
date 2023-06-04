@@ -13,7 +13,6 @@ import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, S
 import { ToastsContainer } from './core/toast/toasts-container.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EditDocumentComponent } from './components/edit-document/edit-document.component';
 import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
 import { AuthorizeModule} from "@app/features/authorize/authorize.module";
@@ -21,8 +20,7 @@ import { AuthorizeModule} from "@app/features/authorize/authorize.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    EditDocumentComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
